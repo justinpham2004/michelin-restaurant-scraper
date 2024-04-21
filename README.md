@@ -1,4 +1,7 @@
-Proof of concept parsing HTML files to scrape data from the Michelin website.
-This project originated from a desire to compile restaurant data for an upcoming trip to Tokyo and Osaka.
-Thus, I learned to automate it by using the requests, xpath, html, and pandas library to compile all the restaurant data from the michelin website,
-and input it all into an excel sheet.
+Originating from a desire to find delicious restaurants for an upcoming trip to Tokyo and Osaka, I wanted to find a way to quickly compile and transfer all of this data to a list, as well as into a Google Maps map, such that I could easily identify restaurants in the area. This was a personal project, and not based on an assignment.
+
+My program needed to quickly be able to compile a list of the best cheap restaurants in a given city and to provide images, a description, a website, and an address to this website. The restaurant would also have to serve the best food as well.
+
+As such, after researching different website databases and API's, I settled upon using the Michelin website to find these recommended restaurants. Although the Michelin website did not provide an actual API in which I could easily extract data from, I decided to create a simple web-scraping program that would extract restaurant data from any given city. Using the requests, xpath, html, and pandas library, I constructed it. First, I used the requests and xpaths libraries to access and scrape all of the details of a given Michelin Restaurant page. Then I constructed a program in python which would construct links given a city, and access the restaurants in that given area. Lastly, I utilized the pandas library to store all of the given restaurant data in that given city.
+
+This was one of my first successful projects that I completed. I was especially proud of this project because it was a project that I was able to apply and improve my day-to-day with. I was able to apply knowledge I learned in one of my computer science courses: CMSC 216, where I used simple i/o so users could communicate with the project using a linux terminal. With this program, I was able to find and compile over 200 michelin recommended "cheap eats," in Tokyo, Kyoto, and Osaka!
